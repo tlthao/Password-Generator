@@ -7,7 +7,7 @@ const pwReq = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   numbers: "0123456789",
   specialChar: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
-  password: ""
+  password: "",
 }
 function generatePassword() {
   var pwChar = "";
@@ -33,12 +33,15 @@ function generatePassword() {
   if (specialChar) {
     pwChar += pwReq.specialChar;
   }
+  
   var password = "";
-  for (let i = 0; i < length; i++) {
-  password += pwChar[Math.floor(Math.random() * pwChar.length)];
+  for (var i = 0; i < length; i++) {
+    password += pwChar[Math.floor(Math.random() * pwChar.length)]
+    
+  }
   return password;
 }
-}
+
 
 function writePassword() {
   var password = generatePassword();
