@@ -24,12 +24,12 @@ function generatePassword() {
     pwChar += pwReq.lowerCase;
   }
 
-  var numbers = confirm("Would you like to include uppercase letters?");
+  var numbers = confirm("Would you like to include numbers?");
   if (numbers) {
     pwChar += pwReq.numbers;
   }
 
-  var specialChar = confirm("Would you like to include uppercase letters?");
+  var specialChar = confirm("Would you like to include special characters?");
   if (specialChar) {
     pwChar += pwReq.specialChar;
   }
