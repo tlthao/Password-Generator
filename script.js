@@ -34,7 +34,7 @@ function generatePassword() {
     pwChar += pwReq.specialChar;
   }
   
-
+  for (let i = 0; i < length; i++)
    
 }
 
