@@ -12,7 +12,7 @@ const pwReq = {
 function generatePassword() {
   var pwChar = "";
 
-  var length = prompt("How long would you like your password? (Must be a minimum of 8 characters and maximum 128 characters.)");
+  var length = prompt("How long would you like your password? (Please enter a number value - must be a minimum of 8 characters and maximum 128 characters.)");
 
   var upperCase = confirm("Would you like to include uppercase letters?");
   if (upperCase) {
